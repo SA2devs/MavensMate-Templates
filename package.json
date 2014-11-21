@@ -180,6 +180,24 @@
 		   ]
 		},
 		{
+			"name" 			: "Trigger Dispatcher",
+			"file_name"		: "SL_TriggerDispatcher.cls",
+			"description" 	: "Trigger dispatcher and associated handlers",
+			"author" 		: "Silverline",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Class API Name",
+		            "default" 		: "SL_<OBJECT>TriggerDispatcher"
+		        },
+				{   
+		            "name"          : "object_name",
+		            "description"   : "Object API Name (omit __c for custom objects)",
+		            "default" 		: "Account"
+		        }
+		   ]
+		},
+		{
 			"name" 			: "Unit Test",
 			"file_name"		: "UnitTestApexClass.cls",
 			"description" 	: "Unit test class",
