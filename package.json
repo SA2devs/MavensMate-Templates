@@ -198,6 +198,19 @@
 		   ]
 		},
 		{
+			"name" 			: "Trigger Helper",
+			"file_name"		: "SL_Helper.cls",
+			"description" 	: "Trigger helper for methods invoked by handler classes",
+			"author" 		: "Silverline",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Class API Name",
+		            "default" 		: "SL_AccountHelper"
+		        }
+		   ]
+		},
+		{
 			"name" 			: "Unit Test",
 			"file_name"		: "UnitTestApexClass.cls",
 			"description" 	: "Unit test class",
