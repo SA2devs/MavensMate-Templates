@@ -25,9 +25,9 @@ global class SL_{{ object_name }}TriggerDispatcher extends TriggerDispatcherBase
 	}
 	public class SL_{{ object_name }}BeforeUpdateTriggerHandler extends TriggerHandlerBase {
 		public override void mainEntry(TriggerParameters tp) {
-			/*BEFORE INSERT METHODS START*/
+			/*BEFORE UPDATE METHODS START*/
 			
-			/*BEFORE INSERT METHODS END*/
+			/*BEFORE UPDATE METHODS END*/
 		}
 	}
 	public class SL_{{ object_name }}BeforeDeleteTriggerHandler extends TriggerHandlerBase {
