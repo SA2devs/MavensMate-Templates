@@ -1,5 +1,5 @@
 /**  
-* \arg ClassName        : {{ api_Name }}
+* \arg ClassName        : {{ api_name }}
 * \arg JIRATicket       : 
 * \arg CreatedOn        : 
 * \arg LastModifiedOn   : 
