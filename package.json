@@ -308,6 +308,24 @@
 	],
 	"ApexTrigger" : [
 		{
+			"name" 			: "Framework Trigger",
+			"file_name"		: "FrameworkTrigger.trigger",
+			"description" 	: "Apex Trigger template for the trigger framework",
+			"author" 		: "Silverline",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Trigger API Name",
+		            "default" 		: "MyCoolTrigger"
+		        },
+		        {   
+		            "name"          : "object_name",
+		            "description"   : "Object API Name",
+		            "default" 		: "Account"
+		        }
+		   ]
+		},
+		{
 			"name" 			: "Apex Trigger",
 			"file_name"		: "ApexTrigger.trigger",
 			"description" 	: "Basic Apex Trigger template",
