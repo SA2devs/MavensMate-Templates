@@ -66,7 +66,7 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 		}
 	}
 	
-	SL_{{ object_name }}TriggerDispatcher(){
+	public SL_{{ object_name }}TriggerDispatcher(){
 		super('{{ object_name }}');
 	}
 	
