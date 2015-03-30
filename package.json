@@ -315,15 +315,16 @@
 			"params" 		: [ 
 		        {   
 		            "name"          : "api_name",
-		            "description"   : "Apex Trigger API Name",
-		            "default" 		: "MyCoolTrigger"
+		            "description"   : "Apex Trigger API Name (omit __c for custom objects)",
+		            "default" 		: "SL_<OBJECT>"
 		        },
 		        {   
 		            "name"          : "object_name",
-		            "description"   : "Object API Name",
+		            "description"   : "Object API Name (omit __c for custom objects)",
 		            "default" 		: "Account"
 		        }
 		   ]
+			
 		},
 		{
 			"name" 			: "Apex Trigger",
@@ -333,12 +334,12 @@
 			"params" 		: [ 
 		        {   
 		            "name"          : "api_name",
-		            "description"   : "Apex Trigger API Name (omit __c for custom objects)",
-		            "default" 		: "SL_<OBJECT>"
+		            "description"   : "Apex Trigger API Name",
+		            "default" 		: "MyCoolTrigger"
 		        },
 		        {   
 		            "name"          : "object_name",
-		            "description"   : "Object API Name (omit __c for custom objects)",
+		            "description"   : "Object API Name",
 		            "default" 		: "Account"
 		        }
 		   ]
