@@ -197,7 +197,7 @@
 		        },
 				{   
 		            "name"          : "suffix",
-		            "description"   : "Object suffix (Blank for standard objects, "__c" for custom objects)",
+		            "description"   : "Object suffix (Blank for standard objects, __c for custom objects)",
 		            "default" 		: "__c"
 		        }
 		   ]
