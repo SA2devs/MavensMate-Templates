@@ -194,11 +194,6 @@
 		            "name"          : "object_name",
 		            "description"   : "Object API Name (omit __c for custom objects)",
 		            "default" 		: "Account"
-		        },
-				{   
-		            "name"          : "suffix",
-		            "description"   : "Object suffix (Blank for standard objects, __c for custom objects)",
-		            "default" 		: "__c"
 		        }
 		   ]
 		},
