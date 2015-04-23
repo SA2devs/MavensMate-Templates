@@ -11,7 +11,7 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 
 	public class SL_{{ object_name }}BeforeInsertTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			List<{{ object_name }}__c> newList = (List<{{ object_name }}__c>) tp.newList;
+			List<{{ object_name }}> newList = (List<{{ object_name }}>) tp.newList;
 			/*BEFORE INSERT METHODS START*/
 			
 			/*BEFORE INSERT METHODS END*/
@@ -19,8 +19,8 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 	}
 	public class SL_{{ object_name }}BeforeUpdateTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			Map<Id, {{ object_name }}__c> newMap = (Map<Id, {{ object_name }}__c>) tp.newMap;
-			Map<Id, {{ object_name }}__c> oldMap = (Map<Id, {{ object_name }}__c>) tp.oldMap;
+			Map<Id, {{ object_name }}> newMap = (Map<Id, {{ object_name }}>) tp.newMap;
+			Map<Id, {{ object_name }}> oldMap = (Map<Id, {{ object_name }}>) tp.oldMap;
 			/*BEFORE UPDATE METHODS START*/
 			
 			/*BEFORE UPDATE METHODS END*/
@@ -28,7 +28,7 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 	}
 	public class SL_{{ object_name }}BeforeDeleteTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			Map<Id, {{ object_name }}__c> oldMap = (Map<Id, {{ object_name }}__c>) tp.oldMap;
+			Map<Id, {{ object_name }}> oldMap = (Map<Id, {{ object_name }}>) tp.oldMap;
 			/*BEFORE DELETE METHODS START*/
 			
 			/*BEFORE DELETE METHODS END*/
@@ -36,7 +36,7 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 	}
 	public class SL_{{ object_name }}AfterInsertTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			Map<Id, {{ object_name }}__c> newMap = (Map<Id, {{ object_name }}__c>) tp.newMap;
+			Map<Id, {{ object_name }}> newMap = (Map<Id, {{ object_name }}>) tp.newMap;
 			/*AFTER INSERT METHODS START*/
 			
 			/*AFTER INSERT METHODS END*/
@@ -44,8 +44,8 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 	}
 	public class SL_{{ object_name }}AfterUpdateTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			Map<Id, {{ object_name }}__c> newMap = (Map<Id, {{ object_name }}__c>) tp.newMap;
-			Map<Id, {{ object_name }}__c> oldMap = (Map<Id, {{ object_name }}__c>) tp.oldMap;
+			Map<Id, {{ object_name }}> newMap = (Map<Id, {{ object_name }}>) tp.newMap;
+			Map<Id, {{ object_name }}> oldMap = (Map<Id, {{ object_name }}>) tp.oldMap;
 			/*AFTER UPDATE METHODS START*/
 			
 			/*AFTER UPDATE METHODS END*/
@@ -53,7 +53,7 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 	}
 	public class SL_{{ object_name }}AfterDeleteTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			Map<Id, {{ object_name }}__c> oldMap = (Map<Id, {{ object_name }}__c>) tp.oldMap;
+			Map<Id, {{ object_name }}> oldMap = (Map<Id, {{ object_name }}>) tp.oldMap;
 			/*AFTER DELETE METHODS START*/
 			
 			/*AFTER DELETE METHODS END*/
@@ -61,7 +61,7 @@ global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherB
 	}
 	public class SL_{{ object_name }}AfterUndeleteTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
-			Map<Id, {{ object_name }}__c> newMap = (Map<Id, {{ object_name }}__c>) tp.newMap;
+			Map<Id, {{ object_name }}> newMap = (Map<Id, {{ object_name }}>) tp.newMap;
 			/*AFTER UNDELETE METHODS START*/
 			
 			/*AFTER UNDELETE METHODS END*/
