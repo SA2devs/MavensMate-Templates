@@ -9,8 +9,6 @@
 */
 global class SL_{{ object_name }}TriggerDispatcher extends SL_TriggerDispatcherBase {
 
-
-
 	public class SL_{{ object_name }}BeforeInsertTriggerHandler extends SL_TriggerHandlerBase {
 		public override void mainEntry(SL_TriggerParameters tp) {
 			List<{{ object_name }}{{ suffix }}> newList = (List<{{ object_name }}{{ suffix }}>) tp.newList;
