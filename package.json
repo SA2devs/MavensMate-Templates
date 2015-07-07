@@ -167,19 +167,6 @@
 			]
 		},		
 		{
-			"name"			: "Trigger Handler",
-			"file_name"		: "TriggerHandler.cls",
-			"description" 	: "An Interface that handles Trigger actions",
-			"author" 		: "MavensMate",
-			"params" 		: [ 
-		        {   
-		            "name"          : "api_name",
-		            "description"   : "Apex Class API Name",
-		            "default" 		: "MyApexClass"
-		        }
-		   ]
-		},
-		{
 			"name" 			: "Trigger Handler",
 			"file_name"		: "SL_TriggerHandler.cls",
 			"description" 	: "Trigger Handler",
