@@ -31,7 +31,7 @@ global class SL_{{ object_name }}TriggerHandler extends SL_TriggerHandlerBase {
 		/*BEFORE DELETE METHODS END*/
 	}
 	
-	public override void beforeInsert(Map<Id, SObject> newMapGeneric){
+	public override void afterInsert(Map<Id, SObject> newMapGeneric){
 		Map<Id, {{ object_name }}{{ suffix }}> newMap = (Map<Id, {{ object_name }}{{ suffix }}>) newMapGeneric;
 		/*AFTER INSERT METHODS START*/
 		
