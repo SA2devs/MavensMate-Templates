@@ -53,7 +53,7 @@ global class SL_{{ object_name }}TriggerHandler extends SL_TriggerHandlerBase {
 		/*AFTER DELETE METHODS END*/
 	}
 	
-	public override void afterDelete(Map<Id, SObject> newMapGeneric){
+	public override void afterUndelete(Map<Id, SObject> newMapGeneric){
 		Map<Id, {{ object_name }}{{ suffix }}> oldMap = (Map<Id, {{ object_name }}{{ suffix }}>) newMapGeneric;
 		/*AFTER UNDELETE METHODS START*/
 		
