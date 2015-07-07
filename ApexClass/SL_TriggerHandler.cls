@@ -16,7 +16,7 @@ global class SL_{{ object_name }}TriggerHandler extends SL_TriggerHandlerBase {
 		/*BEFORE INSERT METHODS END*/
 	}
 	
-	public override void beforeUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> oldMapGeneric){
+	public override void beforeUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> newMapGeneric){
 		Map<Id, {{ object_name }}{{ suffix }}> oldMap = (Map<Id, {{ object_name }}{{ suffix }}>) oldMapGeneric;
 		Map<Id, {{ object_name }}{{ suffix }}> newMap = (Map<Id, {{ object_name }}{{ suffix }}>) newMapGeneric;
 		/*BEFORE UPDATE METHODS START*/
@@ -38,7 +38,7 @@ global class SL_{{ object_name }}TriggerHandler extends SL_TriggerHandlerBase {
 		/*AFTER INSERT METHODS END*/
 	}
 	
-	public override void afterUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> oldMapGeneric){
+	public override void afterUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> newMapGeneric){
 		Map<Id, {{ object_name }}{{ suffix }}> oldMap = (Map<Id, {{ object_name }}{{ suffix }}>) oldMapGeneric;
 		Map<Id, {{ object_name }}{{ suffix }}> newMap = (Map<Id, {{ object_name }}{{ suffix }}>) newMapGeneric;
 		/*AFTER UPDATE METHODS START*/
