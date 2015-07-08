@@ -60,5 +60,4 @@ global class SL_{{ object_name }}TriggerHandler extends SL_TriggerHandlerBase {
 		/*AFTER UNDELETE METHODS END*/
 	}
 	
-	
 }
