@@ -166,10 +166,33 @@
 				}
 			]
 		},		
+	{
+			"name" 			: "Trigger Handler (deprecated)",
+			"file_name"		: "SL_TriggerHandler.cls",
+			"description" 	: "Trigger Handler (for old framework)",
+			"author" 		: "Silverline",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Class API Name (omit __c for custom objects)",
+		            "default" 		: "SL_<OBJECT>TriggerHandler"
+		        },
+				{   
+		            "name"          : "object_name",
+		            "description"   : "Object API Name (omit __c for custom objects)",
+		            "default" 		: "Account"
+		        },
+				{   
+		            "name"          : "suffix",
+		            "description"   : "Object suffix (Blank for standard objects, __c for custom objects)",
+		            "default" 		: "__c"
+		        }
+		   ]
+		},
 		{
 			"name" 			: "Trigger Handler",
-			"file_name"		: "SL_TriggerHandler.cls",
-			"description" 	: "Trigger Handler",
+			"file_name"		: "SL_TriggerHandler2.cls",
+			"description" 	: "Trigger Handler (for new framework)",
 			"author" 		: "Silverline",
 			"params" 		: [ 
 		        {   
@@ -192,7 +215,7 @@
 		{
 			"name" 			: "Trigger Dispatcher",
 			"file_name"		: "SL_TriggerDispatcher.cls",
-			"description" 	: "Trigger dispatcher and associated handlers",
+			"description" 	: "Trigger dispatcher and associated handlers (for very old trigger framework)",
 			"author" 		: "Silverline",
 			"params" 		: [ 
 		        {   
@@ -323,9 +346,28 @@
 	],
 	"ApexTrigger" : [
 		{
-			"name" 			: "Framework Trigger",
+			"name" 			: "Framework Trigger (deprecated)",
 			"file_name"		: "FrameworkTrigger.trigger",
-			"description" 	: "Apex Trigger template for the trigger framework",
+			"description" 	: "Apex Trigger template for the old trigger framework",
+			"author" 		: "Silverline",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Trigger API Name (omit __c for custom objects)",
+		            "default" 		: "SL_<OBJECT>"
+		        },
+		        {   
+		            "name"          : "object_name",
+		            "description"   : "Object API Name (including __c for custom objects)",
+		            "default" 		: "Account"
+		        }
+		   ]
+			
+		},
+		{
+			"name" 			: "Framework Trigger",
+			"file_name"		: "FrameworkTrigger2.trigger",
+			"description" 	: "Apex Trigger template for the new trigger framework",
 			"author" 		: "Silverline",
 			"params" 		: [ 
 		        {   
